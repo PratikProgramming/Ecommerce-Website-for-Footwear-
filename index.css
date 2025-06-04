@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  font-family: Calisto MT;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.product-img-hover:hover {
+  transform: scale(2); /* Enlarges image on hover */
+  z-index: 10;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.img-thumbnail {
+  transition: transform 0.3s ease;
+  cursor: pointer; /* optional: indicate it's interactive */
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.5);
+  z-index: 10; /* make sure it appears above others */
+  position: relative; /* needed for z-index */
+}
